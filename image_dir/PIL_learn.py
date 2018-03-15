@@ -9,7 +9,7 @@ FILE: PIL_learn.py
 AUTHOR: tianyuningmou
 DATE CREATED:  @Time : 2018/3/15 下午2:14
 
-DESCRIPTION:  .
+DESCRIPTION:
 
 VERSION: : #1 
 CHANGED By: : tianyuningmou
