@@ -57,6 +57,8 @@ def compute_average(im_list):
 
 
 # PCA
+# Todo
+# 此段代码有问题，后面再更
 def pca(X):
     """
     主成分分析
@@ -64,9 +66,9 @@ def pca(X):
     :return: 投影矩阵、方差和均值
     """
     # 获取维数
-    num_data, dim = X.shape
+    num_data, dim = X.shape[0], X.ndim
     # 数据中心化
-    mean_X = X.mean(axis=0)
+    mean_X = np.mean(X, axis=0)
     X = X - mean_X
     # PCA - 使用紧凑技巧
     if dim > num_data:
