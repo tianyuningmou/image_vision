@@ -41,3 +41,16 @@ image_y.save('fbb_y.jpeg')
 magnitude = sqrt(imx**2 + imy**2)
 image_1 = Image.fromarray(uint8(magnitude))
 image_1.save('fbb_1.jpeg')
+
+#高斯导数滤波器
+# 标准差
+sigma = 1
+imx = zeros(im.shape)
+filters.gaussian_filter(im, (sigma, sigma), (0, 1), imx)
+image_x = Image.fromarray(uint8(imx))
+image_x.save('fbb_gx.jpeg')
+
+imy = zeros(im.shape)
+filters.gaussian_filter(im, (sigma, sigma), (1, 0), imy)
+image_y = Image.fromarray(uint8(imy))
+image_y.save('fbb_gy.jpeg')
