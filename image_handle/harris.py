@@ -88,5 +88,5 @@ def plot_harris_points(image, filtered_coords):
 if __name__ == '__main__':
     im = array(Image.open('fbb.jpeg').convert('L'))
     harrisim = compute_harris_response(im)
-    filtered_coords = get_harris_points(harrisim, 10)
+    filtered_coords = get_harris_points(harrisim, 6)
     plot_harris_points(im, filtered_coords)
